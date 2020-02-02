@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+        src: url('../../../fonts/roboto/Roboto-Regular.woff2') format('woff2'),
+        url('../../../fonts/roboto/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url('../../../fonts/roboto/Roboto-Thin.woff2') format('woff2'),
+        url('../../../fonts/roboto/Roboto-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../../../fonts/roboto/Roboto-Bold.woff2') format('woff2'),
+        url('../../../fonts/roboto/Roboto-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../../../fonts/roboto/Roboto-Medium.woff2') format('woff2'),
+        url('../../../fonts/roboto/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+p,h1,h2,h3,h4,h5,h6,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background: url(../../../img/bg-header.png) #013056 center center no-repeat;  
+}
+.header .row{
+    align-items: center;
+    padding: 10px 0;
+}
+.header p{
+    color: #caddea;
+    font-family: 'Roboto-Regular';
+    font-size: 20px;
+}
+.header p span{
+    font-family: 'Roboto-Thin';
+}
+.sprite{
+    background: url('../../../img/sprite/sprite_mobille.png');
+    display: inline-block;
+    margin-left: 3px;
+}
+.login{
+    width: 51px; height: 43px;
+    background-position: -10px -55px;
+}
+.chat{
+    
+    width: 41px; height: 25px;
+    background-position: -10px -10px;
+}
+.header a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto-Regular';
+    font-size:20px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+.menu{
+    background: url(../../../img/bg-header.png) #1b7fd0 center center no-repeat;  
+}
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto-Regular';
+    font-size:20px;
+    text-transform: uppercase;
+    line-height: 2.1;
+    text-align: center;
+    margin: 0 15px 0 15px;
+    
+}
+.menu li{
+    list-style-type: none;
+    
+}
+li:hover {
+    background-color:$primary-4;
+a{
+        color:$primary-3;
+    }}
+@media(max-width:1024px){
+    .header p{
+        font-size: 18px;
+    }
+    .header a{
+        font-size: 18px;
+    }
+    .chat{
+        width: 41px;
+        height: 28px;
+        background-position: -57px -8px;
+        background-size: 130%;
+    }
+    .chat-padding{
+        padding: 0;
+    }
+}
+
+.burger{
+    width: 65px;
+    height: 5px;
+    background-color: #fff;
+    display: block;
+    position: relative;
+}
+.burger::before{
+    content: '';
+    width: 65px;
+    height: 5px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    top:-15px;
+}
+.burger::after{
+    content: '';
+    width: 65px;
+    height: 5px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    top:15px;
+}
+@media(max-width:1199px){
+    .menu a{
+        
+        font-size:16px;
+        text-transform: uppercase;
+        line-height: 2.1;
+        text-align: center;
+        margin: 0 10px 0 10px;
+        }}
+   
+@media(max-width:992px){
+    .burger{
+        width: 65px;
+        height: 5px;
+        top: 12px;
+        display: block;
+        position: relative;
+        transform: scale(0.5)
+    }
+    .burger::before{
+        content: '';
+        width: 65px;
+        height: 5px;
+        background-color: #fff;
+        display: block;
+        position: absolute;
+        top:-15px;
+    }
+    .burger::after{
+        content: '';
+        width: 65px;
+        height: 5px;
+        background-color: #fff;
+        display: block;
+        position: absolute;
+        top:15px;
+    }
+    .chat{
+        width: 42px;
+        height: 24px;
+        background-position: -57px -10px;
+    }
+    .login{
+    width: 41px; height: 25px;
+    background-position: -10px -64px;
+    transform: scale(0.7);
+    
+    
+} .menu a{
+    display: flex;
+        align-items: center;
+}
+.nav1{
+    position: relative;
+    left: 80px
+}}
+
+@media(max-width:767px){
+   .menu2{
+    color: #caddea;
+    font-family: 'Roboto-Regular';
+    font-size: 16px;}
+    .burger{
+        width: 65px;
+        height: 5px;
+        top: 1px;
+        display: block;
+        position: relative;
+        transform: scale(1.2)
+    }
+}
+// @media(max-width:576px){
+//     .row .menu2{
+//         position: relative;
+//         right: -250px;}
