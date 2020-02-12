@@ -1,5 +1,34 @@
 @mixin font($color,$font,$size) {
+    font-size: $size;
     color:$color;
     font-family: $font;
-    font-size: $size;
+    
+}
+@mixin text ($f-size, $color, $f-family) {
+    font-size: $f-size;
+    color: $color;
+    font-family: $f-family;
+}
+
+@mixin toggle {
+    width: 0;
+    height: 0;
+    border-top: 30px solid $primary-3;
+    border-right: 30px solid transparent;
+}
+
+@mixin toggle-red {
+    width: 0;
+    height: 0;
+    border-top: 30px solid $base-red;
+    border-right: 30px solid transparent;
+}
+
+@mixin h2 {
+    @include text(28px,$primary-2,$f-bold);
+    background: $primary-3;
+    text-align: center;
+    margin-top: 40px;
+    text-transform: uppercase;
+    padding: 5px 0px;
 }

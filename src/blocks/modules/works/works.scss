@@ -1,0 +1,157 @@
+.works-container {
+    background: url(../../../img/Bg_elem1.png) $primary-5 bottom no-repeat;
+    padding: 20px 0px;
+}
+
+.title_works {
+    margin-bottom: 20px;
+
+    h2 {
+        @include h2;
+    }
+
+    .toggle {
+        @include toggle;
+    }
+}
+
+.punkts {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 0px 4px 4px 0px;
+    text-transform: uppercase;
+    border-bottom: 1px solid $primary-3;
+
+    span {
+        @include text (60px, $primary-3, $f-bold);
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    h4 {
+        @include text (18px, $primary-2, $f-med);
+    }
+
+    .arrows {
+        z-index: 1;
+        display: none;
+        position: absolute;
+        right: -49px;
+        width: 0;
+        height: 0;
+        border-top: 35px solid transparent;
+        border-left: 50px solid $primary-2;
+        border-bottom: 35px solid transparent;
+    }
+}
+
+.punkts:hover {
+    background-color: $primary-2;
+    border-bottom: 1px solid $primary-2;
+
+    h4 {
+        color: $base-light;
+    }
+
+    .arrows {
+
+        display: block;
+    }
+}
+
+.hide-article {
+    display: none;
+    text-align: center;
+    background: $base-light;
+    box-shadow: 0px 0px 7px 0px #c8d6de;
+    padding: 30px;
+
+    img {
+        margin-bottom: 20px;
+    }
+
+    span {
+        @include text (18px, $primary-2, $f-reg);
+    }
+
+    p {
+        text-align: justify;
+        @include text (18px, $base-dark, $f-reg);
+    }
+}
+
+.show-article {
+    display: block;
+    text-align: center;
+    background: $base-light;
+    box-shadow: 0px 0px 7px 0px #c8d6de;
+    padding: 30px;
+
+    img {
+        margin-bottom: 20px;
+    }
+
+    span {
+        @include text (18px, $primary-2, $f-reg);
+    }
+
+    p {
+        text-align: justify;
+        @include text (18px, $base-dark, $f-reg);
+    }
+}
+
+.works-none {
+    display: none;
+}
+
+.works-order {
+    text-align: center;
+    display: inline-block;
+    margin-top: 50px;
+
+    a {
+        text-decoration: none;
+        padding: 10px 70px;
+        background-color: $base-red;
+        text-transform: uppercase;
+        @include text (26px, $base-light, $f-reg);
+        transition: .4s;
+    }
+    a:hover {
+        transition: .4s;
+        color: $base-dark;
+    }
+
+    .toggle {
+        @include toggle-red;
+    }
+}
+
+@media (max-width: 1024px) {
+    .works-container {
+      position: relative;
+      padding: 20px 0;
+      // .block-tringle {
+      //   margin: 0;
+      }
+      .icon-button {
+        position: absolute;
+        z-index: 1;
+        bottom:-25px;
+        right: 5px;
+        div {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-image: url(../../../img/sprite/sprite_mobille.png);
+          background-color: $primary-33;
+          border: solid 2px rgba(1, 48, 86, 0.3);
+          margin-bottom: 10px;
+        }
+      .icon-3 {
+          background-position: -4px -106px;
+          background-color: $primary-1;
+        }
+      }}

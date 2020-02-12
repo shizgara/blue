@@ -1,0 +1,103 @@
+.card-bg {
+    background-color: $primary-3;
+    padding: 10px 0px;
+}
+.fab {
+    font-size: 35px;
+    color: $primary-2;
+}
+.twitter {
+    color: $primary-1;
+}
+.footer-bg {
+    background: url(../../../img/Bg3.png) $primary-1 center center no-repeat;
+    padding-top: 20px;
+    ul {
+        list-style: none;
+        @include text (14px,$primary-3,$f-reg);
+        p {
+            margin: 0;
+        }
+    }
+    .hr {
+        position: relative;
+        text-align: center;
+        margin: 20px 0px;
+        .hr-footer {
+            position: absolute;
+            width: 100%;
+            color: $primary-3;
+        }
+        .plus {
+            background: $primary-3;
+            position: relative;
+            padding: 10px 13px;
+            border-radius: 50%;
+        }
+    }
+    .footer-menu {
+        
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            @include text (16px,$base-light,$f-med);
+            transition: .4s;
+        }
+        a:hover {
+            transition: .4s;
+            color: $primary-2;
+        }
+    }
+    .footer-creators {
+        text-align: center;
+        @include text (16px,$primary-3,$f-reg);
+    }
+}
+.soc a{
+    margin-left: 10px;
+}
+@media (max-width: 991px) {
+    .soc{
+        justify-content: space-between;
+    }
+    .soc a{
+        margin-left: 0px;
+    }
+    .soc div:nth-child(1){
+        margin-left: -50px;
+    }
+    .soc div:nth-child(2){
+        margin-right: -50px;
+    }
+}
+@media (max-width: 768px) {
+    .soc{
+        justify-content: center;
+        align-items: center;
+    }
+    .iconm{
+        text-align: center;
+   }
+.iconm a{
+    margin: 0 50px;
+    }
+    .card-bg div:nth-child(2){
+        height: 50px;
+        margin: 0;
+        padding: 0;
+    }
+    .footer-bg{
+        // height: 100px;
+    }
+ }
+.mobfot {
+a{
+    @include text (26px,$primary-3,$f-reg);
+    line-height: 25px;
+       }
+ul{
+    list-style: none;
+    }
+li{
+    margin-top: 10px;
+}}

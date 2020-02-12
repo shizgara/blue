@@ -6,24 +6,24 @@
           filter: drop-shadow(5px 5px 3px lighten($base-dark, 70%));
           margin: 25px 0;
           h1 {
-            background-color: $primary-4;
+            background-color: $primary-44;
             padding: 20px 45px;
-            @include font($primary-3, 'Roboto-Regular', 36px);
+            @include font($primary-33, 'Roboto-Regular', 36px);
           }
           @media (max-width: 320px) {
             h1 {
-              @include font($primary-3, 'Roboto-Regular', 24px);
+              @include font($primary-33, 'Roboto-Regular', 24px);
               padding: 10px 20px;
             }
             div {
-              border-top: 18px solid $primary-4;
+              border-top: 18px solid $primary-44;
               border-right: 18px solid transparent;
             }
                  }
           div {
             width: 0;
             height: 0;
-            border-top: 30px solid $primary-4;
+            border-top: 30px solid $primary-44;
             border-right: 30px solid transparent;
           }
 }
@@ -50,7 +50,7 @@ ul {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: $primary-3;
+    background: $primary-33;
     position: absolute;
     top: 8px;
     left: -19px;
@@ -84,11 +84,11 @@ ul {
     width: 100%;
     height: 100%;
     text-decoration: none;
-  color: $primary-2;}
+  color: $primary-22;}
 .button button {
     background: none;
-    border: solid 1px $primary-3;
-    @include font($primary-3, 'Roboto-Regular', 18px);
+    border: solid 1px $primary-33;
+    @include font($primary-33, 'Roboto-Regular', 18px);
     text-align: center;
     padding: 15px 0;}
     @media (max-width: 768px) {
@@ -115,7 +115,7 @@ ul {
   #text-block{
     font-size: 18px;
     font-family: 'Roboto-Regular';
-    color: $primary-3;
+    color: $primary-33;
     font-weight: bold;
     text-transform: uppercase;
     }
@@ -128,10 +128,10 @@ ul {
     @media (max-width: 768px) {
       .banner {
         position: relative;
-        padding: 0;
+        padding: 20px 0;
         // .block-tringle {
         //   margin: 0;
-        // }
+        }
         .icon-button {
           position: absolute;
           z-index: 1;
@@ -142,7 +142,7 @@ ul {
             height: 50px;
             border-radius: 50%;
             background-image: url(../../../img/sprite/sprite_mobille.png);
-            background-color: $primary-3;
+            background-color: $primary-33;
             border: solid 2px rgba(1, 48, 86, 0.3);
             margin-bottom: 10px;
           }
@@ -157,20 +157,10 @@ ul {
             background-color: $primary-1;
           }
         }
-        // .block-tringle {
-        //   p {
-        //     background-color: $primary-4;
-        //     padding: 5px 0px 5px 5px;
-        //     @include font($primary-3, 'Roboto-Regular', 18px);
-        //   }
-        //   div {
-        //     width: 0;
-        //     height: 0;
-        //     border-top: 30px solid $primary-4;
-        //     border-right: 30px solid transparent;
-        //   }
-        // }
-      }
-    }
+      .row .tringle{
+margin-top: 0;
+      }}
+        
+
     
 

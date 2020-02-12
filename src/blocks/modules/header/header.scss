@@ -200,13 +200,18 @@ a{
     .burger{
         width: 65px;
         height: 5px;
-        top: 1px;
+        top: -9px;
         display: block;
         position: relative;
         transform: scale(1.2)
     }
+    .imgmob{
+        color: white;
+        width:100%;
+        filter:hue-rotate(100deg);
+        position: relative;
+        top: -9px;
+
+        // height: 50px;
+    }
 }
-// @media(max-width:576px){
-//     .row .menu2{
-//         position: relative;
-//         right: -250px;}
